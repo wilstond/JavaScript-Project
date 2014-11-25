@@ -3,8 +3,8 @@ JavaScript-Project
 
 JavaScript Project by Team Epiphany
 
-Create a fictional restaurant website. 
-The website is to contain the following pages/features/functionality: 
+Create a fictional restaurant website.  
+The website is to contain the following pages/features/functionality:  
  A Home page – as a group, determine the best content for this page 
  About Us – information about the restaurant and parent company, including
 history, etc. 
