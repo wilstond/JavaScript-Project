@@ -1,0 +1,226 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body
+{
+	font-family: 'Lato', sans-serif;
+	background-image: url("img/bar.jpg");
+	width: 100%;
+	height: auto;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+header
+{
+	width: 100%;
+	height: 65px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #fff;
+	z-index: 999;
+	box-shadow: 0px 5px 3px rgba(0,0,0, 0.7);
+	background: #4d1d03;
+}
+
+.wrapper
+{
+	width: 1024px;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+}
+
+nav
+{
+	display: table;
+}
+
+nav a
+{
+	color: #fff;
+	line-height: 60px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+nav ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+	text-align: center;
+}
+
+nav ul li
+{
+	list-style-type: none;
+	display: inline-block;
+	padding	: 3px 20px;
+	margin-left: -6px;
+	cursor: pointer;
+}
+
+nav ul li:nth-child(3)
+{
+	margin-right: 73px;
+}
+
+nav ul li:nth-child(4)
+{
+	margin-left: 73px;
+}
+
+
+nav ul li:hover
+{
+	background: #300c0a;
+}
+
+nav ul li:hover ul
+{
+	display: block;
+	background: #fff;
+	color: #300c0a;
+}
+
+nav ul ul
+{
+	display: none;
+	margin-left: -20px;
+	position: absolute;
+	text-align: left;
+	width: 170px;
+}
+
+nav ul ul li
+{
+	display: block;
+}
+
+nav ul ul li:hover
+{
+	background: #fff;
+	margin: 0;
+	font-weight: bolder;
+}
+
+nav ul ul li a
+{
+	color: #300c0a;
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 0;
+	margin: 0;
+	line-height: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.active
+{
+	background: #300c0a;
+}
+
+.logo
+{
+	background: #300c0a;
+	margin-top: -70px;
+	margin-left: 412px;
+	width: 160px;
+	height: 85px;
+	position: relative;
+	z-index: 999;
+	text-align: center;
+}
+
+.logo:after
+{
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-top: 25px solid #300c0a;		
+}
+
+.logo p
+{
+	font-size: 2em;
+	padding-top: 18px;
+	letter-spacing: 3px;
+	line-height: 100%;
+	font-family: 'Oleo Script', cursive;
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+   text-shadow: 2px 2px #4d1d03;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.logo:hover,
+.logo:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+
+.head_content
+{
+	background: rgba(0,0,0, 0.4);
+	font-family: 'Oleo Script', cursive;
+	width: 100%;
+	height: 100%;	
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.head_content h1
+{
+	font-size: 8em;
+	margin-top: 20%;
+   text-shadow: 5px 5px #300c0a;
+}
+
+.head_content h2
+{
+	font-size: 1.5em;
+	letter-spacing: 5px;
+    text-shadow: 2px 2px #300c0a;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+.second_content
+{
+	background: #fff;
+	font-family: 'Oleo Script', cursive;
+	width: 100%;
+	height: 100%;	
+	padding: 20px;
+	font-size: 1em;
+	text-align: center;
+}

@@ -1,0 +1,21 @@
+-- AKSHAY C DESAI
+-- ASSIGNMENT 6
+-- QUESTION 1
+
+create or replace procedure gl_account_insert
+(
+  account_number_param general_ledger_accounts.account_number%TYPE,
+  account_description_param general_ledger_accounts.account_description%TYPE
+)
+
+AS
+  Begin
+    insert into general_ledger_accounts values(account_number_param, account_description_param);
+    commit;
+  end;
+  /
+  
+call gl_account_insert(1000, 'example1');
+
+select * from general_ledger_accounts
+WHERE account_number = 1000;
