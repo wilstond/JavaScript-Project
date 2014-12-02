@@ -1,0 +1,88 @@
+body {
+	
+}
+
+#main {
+	margin-left: 100px;
+	margin-right: 100px;
+	background: #E0E0EB;
+}
+
+#main h2 {
+	background: #4d1d03; 
+	color: #fff;
+	padding: 15px;
+	margin: 0; 
+	font-size: 22pt;
+	font-family:'Oswald', sans-serif;
+	letter-spacing: 2px;
+}
+
+#main h3 {
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	padding: 15px;
+	margin: 0;
+}
+
+#feedback {
+	float: left;
+	width: 75%;
+	height: 100vh;
+	background: #F2F2F2;
+}
+
+.content {
+	margin: 0;
+	padding: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#feebackForm {
+	padding: 15px; 
+	font-family: 'Roboto', sans-serif;
+}
+
+
+#nameR {
+	margin: 0; 
+	padding: 0;
+}
+
+#emailR {
+	margin: 0; 
+	padding: 0;
+}
+
+#feedbackR {
+	
+	margin: 0; 
+}
+
+#feedbackarea {
+	width: 450px;
+	height: 75px;
+}
+
+input[type=submit] {
+	padding: 10px;
+	width: 100px;
+	height: 50px;
+	font-size: 16pt;
+	background-color: #4d1d03;
+	color: #fff;
+}
+
+#location {
+	width: 25%;
+	float: right;
+	height: 100vh;
+	background: #F2F2F2;
+}
+
+#location p{
+	margin: 0;
+	padding: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
