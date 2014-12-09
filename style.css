@@ -1,6 +1,21 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
+.clearfix:after {  
+  content: " ";  /*Old browsers doesn't support empty content*/
+  display: block;  
+  height: 0;  
+  clear: both;  
+  visibility: hidden;
+}
+ 
+/*If you do not need(or care about) IE support*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body
 {
 	font-family: 'Lato', sans-serif;
@@ -31,10 +46,38 @@ header
 	font-family: 'Lato', sans-serif;
 }
 
-nav
-{
-	display: table;
+
+#main {
+	margin: 100px auto 0;
+	width: 1000px;
+	background-color: #F2F2F2;
+	padding-bottom: 20px;
 }
+
+#main h2 {
+	background: #4d1d03; 
+	color: #fff;
+	padding: 15px;
+	margin: 0; 
+	font-size: 22pt;
+	font-family:'Oswald', sans-serif;
+	letter-spacing: 2px;
+}
+
+#main h3 {
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	padding: 15px;
+	margin: 0;
+}
+
+#main p {
+	font-family: 'Roboto', sans-serif;
+	margin: 0; 
+	padding: 15px;
+}
+
+
 
 nav a
 {
@@ -224,3 +267,76 @@ nav ul ul li a
 	font-size: 1em;
 	text-align: center;
 }
+
+
+
+/* Gift Card Styles */
+.cardValue{
+	float:left;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 70px;
+	height: 50px;
+	margin-left: 15px;
+	border:1px solid #eee;
+	font-size:15px;
+	color: #333;
+}
+
+
+.cardValue:before{
+	content: "$"
+}
+
+#giftCardForm{
+	float: left;
+	width: 40%;
+	display: block;
+}
+
+
+#giftCardForm div{
+
+	display: table;
+
+}
+
+
+
+.cardPreview{
+	float: left;
+	width: 40%;
+	margin-left: 40px;
+}
+
+input[type=text]{
+	width: 90%;
+	height: 25px;
+	padding:5px;
+	background-color: #fff;
+	border-radius: 2px;
+	border:1px solid #efefef;
+	margin-left: 5px;
+	margin-top: 5px;
+
+
+}	
+
+input[type=submit]{
+	width: 80px;
+	height: 30px;
+	text-transform: uppercase;
+	margin:20px auto 0;
+	display: block;
+
+}
+
+
+label{
+		display: block;
+		font-size: 14px;
+		color: #333;
+		margin-top: 10px;	
+}
+
+

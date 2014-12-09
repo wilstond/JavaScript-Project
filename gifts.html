@@ -3,9 +3,9 @@
 <head>
 
 	<title>Site</title>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -37,7 +37,43 @@
 				</nav>
 			</div>			
 		</header>
-	</div>
+		<div id="main" class="clearfix">
+	 		<h2>Gift your loved one's </h2>
+	 		<article id="feedback">
+	 		<h3>AS MENU OFFERINGS VARY BY LOCATION AND CAN CHANGE DAILY, PLEASE CONTACT YOUR LOCAL FIRST ROW LOCATION FOR THEIR CURRENT SELECTIONS AS WELL AS ALL OTHER ITEMS AVAILABLE.</h3>
 
+			
+			<p class="content">We'd love to have your feedback. Tell us about your latest visit to your neighborhood First Row. Or maybe you have a question for us. Whatever the reason, use this form to let us know what's on your mind and help us direct your comments or questions to the right person.</p>
+
+			<form id="giftCardForm">
+				<label for="Yname">Your name:</label>
+				<input type="text" name="Yname" id="Yname">
+				
+				<label for="">Name on Card:</label>	
+				<input type="text" name="cardName" id="cardName">
+
+				<label for="">Card value:</label>
+
+				<div>
+					<button class="cardValue" id="v10">10</button>
+					<button class="cardValue" id="v20">20</button>
+					<button class="cardValue" id="v50">50</button>
+					<button class="cardValue" id="v100">100</button>
+				</div>
+				
+			</form>
+
+			<div class="cardPreview">
+				<div id="dineCard">
+					<img src="img/dineCard.png" alt="Dine Card" />
+					<p id="printName"></p>
+					<p id="printValue"></p>
+				</div>
+			</div>
+	 		</article>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/gifts.js"></script>
 </body>
 </html>
