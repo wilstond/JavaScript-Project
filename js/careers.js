@@ -13,9 +13,13 @@ $(document).ready(function(){
 	$("form").submit(function(){	
 		
         if(validateForm()){
-        	alert("You have successfully applied for " + $('#post').val()  + " at location " + $('#location').val());	
-        	$('.formOutput').css("display", "block");
+        	
+        	$('.formOutput').css({
+  							 'display' : 'block',
+  							  'background-color' : '#008000',
+							});
 			$('.formOutput').html("Thank you " + $("#fname").val() + "</br></br> We will contact you soon.");
+			alert("You have successfully applied for " + $('#post').val()  + " at location " + $('#location').val());	
 			return false;
         }
         else{
@@ -62,7 +66,10 @@ function validateForm(){
 
 	if(bool_val == 0){
 		$('.formOutput').html (validationSummary);
-		$('.formOutput').css("display", "block");
+		$('.formOutput').css({
+  							 'display' : 'block',
+  							  'background-color' : '#D30E12',
+							});
 		return  false;
 	}
 	else{
