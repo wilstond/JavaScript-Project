@@ -24,7 +24,6 @@ body
 	color: #fff;
 	text-shadow: 2px 2px solid #300c0a;
 	padding-bottom: 20px;
-	position: absolute;
 	box-sizing: border-box;
 }
 
@@ -197,9 +196,9 @@ label{
 	background: rgba(0,0,0, 0.4);
 	font-family: 'Oleo Script', cursive;
 	width: 100%;
-	display: table;
 	padding: 20px;
 	color: #fff;
+	display: table;
 	text-align: center;
 }
 
@@ -207,24 +206,52 @@ label{
 {
 	margin: 0 auto;
 	text-align: center;
+	text-shadow: 2px 2px solid #300c0a;	
 }
 
-.location_box
-{
 
-}
 
 .locationSelect{
 	float: left;
 	width: 30%;
-	
+	margin-top: 50px;
+	background: #fff;
+	border-radius: 10px;
 }
 
 .locationSelect a
 {
 	text-decoration: none;
-	color: #fff;
+	color: #300c0a;
 }
+
+.locationSelect ul
+{
+	display: inline-block;
+	margin: 3%;
+}
+
+.locationSelect ul li
+{
+	list-style-type: none;
+	font-size: 1em;
+	line-height: 200%;
+	font-family: 'Lato', sans-serif;
+}
+
+.locationSelect ul li:first-child
+{
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+}
+
+.locationSelect a:hover
+{
+	border-bottom: 1px solid #300c0a;
+	color: #300c0a;
+}
+
 
 .locationPreview{
     float: right;
