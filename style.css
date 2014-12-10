@@ -1,5 +1,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Playball);
 
 .clearfix:after {  
   content: " ";  /*Old browsers doesn't support empty content*/
@@ -278,9 +279,14 @@ nav ul ul li a
 	width: 70px;
 	height: 50px;
 	margin-left: 15px;
-	border:1px solid #eee;
+	border:1px solid #aaa;
 	font-size:15px;
 	color: #333;
+	line-height: 45px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 15px;
+	cursor: pointer;
 }
 
 
@@ -301,7 +307,29 @@ nav ul ul li a
 
 }
 
+#dineCard{
+	position: relative;
+}
 
+
+#dineCard #printName{
+	position: absolute;
+	top:20px;
+	left: 10px;
+	font-size: 26px;
+	font-family: 'Playball';
+	text-transform: capitalize;
+}
+
+
+#dineCard #printValue{
+	position: absolute;
+	top:70px;
+	left: 10px;
+	font-size: 20px;
+	color: #C50000;
+	text-transform: capitalize;
+}
 
 .cardPreview{
 	float: left;
@@ -318,8 +346,6 @@ input[type=text]{
 	border:1px solid #efefef;
 	margin-left: 5px;
 	margin-top: 5px;
-
-
 }	
 
 input[type=submit]{
@@ -331,7 +357,6 @@ input[type=submit]{
 
 }
 
-
 label{
 		display: block;
 		font-size: 14px;
@@ -340,3 +365,26 @@ label{
 }
 
 
+
+/*Location Page CSS*/
+
+#map-canvas{
+	 width: 500px;
+     height: 400px;
+
+}
+
+
+.locationSelect{
+	float: left;
+	width: 30%;
+}
+
+.locationPreview{
+	float: left;
+	width: 60%
+}
+
+.info{
+	display: none;
+}

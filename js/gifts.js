@@ -1,28 +1,20 @@
-var buyNow1 = document.getElementById("v10");
-var buyNow2 = document.getElementById("v20");
-var buyNow3 = document.getElementById("v50");
-var buyNow4 = document.getElementById("v100");
+$(document).ready(function(){
 
-buyNow1.onclick = printCard();
-buyNow2.onclick = printCard();
-buyNow3.onclick = printCard();
-buyNow4.onclick = printCard();
+	$('.cardValue').click(function() {
+		
 
+		$('#printValue').html($(this).html());
 
-function printCard(){
-	var cardName = document.getElementById("cardName");
-	var cardValue = this.innerHTML; 
+		$('#printName').html($('#cardName').val());
 
-	var printName = document.getElementById("printName");
-	var printValue = document.getElementById("printValue").innerHTML; 
-
-	var dineCard = document.getElementById("dineCard");
-
-	printName.innerHTML = cardName.innerHTML;
-	printValue.innerHTML = cardValue;
-
-	return false;
-
-}
+	});
 
 
+	$("form").submit(function(e){
+        e.preventDefault();
+		alert("Payment Received. Dine Card will be mailed to -  " + $('#cardadd').val());
+
+	});
+
+
+});
