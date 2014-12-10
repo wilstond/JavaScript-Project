@@ -2,12 +2,12 @@
 
 #menu-container {
     margin: 0 auto;
-    margin-top: 120px;
-    background: rgba(0,0,0, 0.7);
+    background: rgba(0,0,0, 0.4);
 	font-family: 'Lato', sans-serif;
-	width: 90%;
-	min-height: 480px;	
-	padding: 20px;
+	width: 100%;
+    height: 100%;
+	padding-top: 120px;
+    padding-bottom: 50px;
 	color: #fff;
 	text-align: center;
 }
@@ -22,52 +22,28 @@
     background: #4d1d03;
     font-size: 30px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 90%;
-    border: 2px solid #300c0a;   
-    border-radius: 10px;
+    /*margin-bottom: 20px;*/
+    margin-top: 20px;
+    width: 50%;
+    /*border: 2px solid #300c0a;*/   
+    /*border-radius: 10px;*/
 }
 
-#brunch-content {
+#brunch-content, #lunch-content, #dinner-content, #buffet-content, #drinks-content {
     padding-top: 20px;
-    /*width: 90%;
-    margin: 0 auto;*/
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.7);
 }
 
-#brunch-content ul li {
-    display: inline-block;
-    width: 48%;
+#brunch-content, #lunch-content, #dinner-content, #buffet-content, #drinks-content ul li {
+    /*display: inline-block;*/
+    width: 50%;
+    margin: 0 auto;
     margin-bottom: 40px;
-    border: 1px solid #300c0a;
+    /*border: 1px solid #300c0a;*/
     padding: 10px 5px;
-    background: rgba(0,0,0,0.7);
-}
-
-#lunch-content {
-    /*display: none;*/
-}
-
-#lunch-content ul li {
-    display: inline-block;
-    width: 48%;
-    margin-bottom: 40px;
-    border: 1px solid #300c0a;
-    padding: 10px 5px;
-    background: rgba(0,0,0,0.7);
-    
-}
-
-#dinner-content {
-    /*display: none;*/
-}
-
-#buffet-content {
-    display: none;
-}
-
-#drinks-content {
-    display: none;
+    /*background: rgba(0,0,0,0.7);*/
 }
 
 
