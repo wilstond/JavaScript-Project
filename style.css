@@ -431,3 +431,9 @@ blockquote:before {
 .quote:first-child{
 	display: block;
 }
+
+
+.validationSummary{
+	font-style: 10px;
+	color: #333;
+}
