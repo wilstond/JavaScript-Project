@@ -19,7 +19,7 @@
 
 body
 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', Helvetica;
 	background-image: url("img/bar.jpg");
 	width: 100%;
 	height: auto;
@@ -339,7 +339,7 @@ nav ul ul li a
 
 input[type=text]{
 	width: 90%;
-	height: 25px;
+	height: 30px;
 	padding:5px;
 	background-color: #fff;
 	border-radius: 2px;
@@ -388,3 +388,49 @@ label{
 .info{
 	display: none;
 }
+
+
+/*Careers Page*/
+.openingsWrapper{
+	display: block;
+}
+
+.openings {
+	display: block;
+	background-color: #fff;
+	border:1px solid #ccc;
+	float: left;
+	height: 40px;
+	line-height: 35px;
+	font-size: 15px;
+	color: #333;
+	padding: 0 8px;
+	text-align: center;
+	margin: 15px;
+	cursor: pointer;
+}
+
+
+
+
+#careersForm{
+	width: 60%;
+	display: block;
+	margin-top: 20px;
+	float: left;
+}
+
+
+#careersForm input[type=text]
+{
+
+}
+
+
+.formOutput{
+	float: right;
+	width: 30%;
+	margin-right: 10px;
+}
+
+
