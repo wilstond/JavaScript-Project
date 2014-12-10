@@ -275,6 +275,12 @@ label{
 	margin-left: 40px;
 }
 
+.printValue:before
+{
+	content: "$";
+	color: #000;
+}
+
 #bottom_content
 {
 	height: 50%;
