@@ -1,0 +1,154 @@
+#dineCard #printValue{
+	position: absolute;
+	top:70px;
+	left: 10px;
+	font-size: 20px;
+	color: #C50000;
+	text-transform: capitalize;
+}
+
+.cardPreview{
+	float: left;
+	width: 40%;
+	margin-left: 40px;
+}
+
+input[type=text]{
+	width: 90%;
+	height: 30px;
+	padding:5px;
+	background-color: #fff;
+	border-radius: 2px;
+	border:1px solid #efefef;
+	margin-left: 5px;
+	margin-top: 5px;
+}	
+
+input[type=submit]{
+	width: 80px;
+	height: 30px;
+	text-transform: uppercase;
+	margin:20px auto 0;
+	display: block;
+
+
+#bottom_content
+{
+	height: 50%;
+}
+
+#foot
+{
+	height: 35%;
+}
+
+.testimonials h1
+{
+	font-family: 'Oleo Script', cursive;
+	font-size: 3.5em;	
+	margin-top: 2%;
+}
+
+.fblocks
+{
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #fff; ;
+}
+
+.fblocks a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.fblocks a:hover
+{
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+.fblocks ul
+{
+	display: inline-block;
+	margin: 3%;
+}
+
+.fblocks ul li
+{
+	list-style-type: none;
+	font-size: 1em;
+	line-height: 200%;
+	font-family: 'Lato', sans-serif;
+}
+
+.fblocks ul li:first-child
+{
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+}
+
+.social 
+{
+	font-size: 1.8em;
+}
+
+.social i
+{
+	margin: 1.3%;
+}
+
+.copyright
+{
+	border-top: 1px solid #fff;
+	width: 30%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+
+/*Careers Page*/
+.openingsWrapper{
+	display: block;
+}
+
+.openings {
+	display: block;
+	background-color: #fff;
+	border:1px solid #ccc;
+	float: left;
+	height: 40px;
+	line-height: 35px;
+	font-size: 15px;
+	color: #333;
+	padding: 0 8px;
+	text-align: center;
+	margin: 15px;
+	cursor: pointer;
+}
+
+
+
+
+#careersForm{
+	width: 60%;
+	display: block;
+	margin-top: 20px;
+	float: left;
+}
+
+
+#careersForm input[type=text]
+{
+
+}
+
+
+.formOutput{
+	float: right;
+	width: 30%;
+	margin-right: 10px;
+}
+
+

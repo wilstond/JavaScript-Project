@@ -3,9 +3,9 @@
 <head>
 
 	<title>Site</title>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -37,7 +37,41 @@
 				</nav>
 			</div>			
 		</header>
-	</div>
+		<div id="main" class="clearfix">
+	 		<h2>Gift your loved one's </h2>
+	 		<article>
+		 		<h3>Current Openings</h3>
+		 		<div class="openingsWrapper clearfix" >
+			 		<div class="openings"><span>Master Chef - 1</span>  <span>Toronto </span> </div>
+			 		<div class="openings"><span>Master Chef - 1 </span> <span>Etobicoke </span> </div>
+			 		<div class="openings"><span>Assisstant Manager - 2</span>  <span>Missisuaga </span> </div>
+			 		<div class="openings"><span>General Workers - 5</span> <span>All Locations </span></div>
+			 		<div class="openings"><span>Jr. Cook</span> <span>Brampton </span></div>
+			 		<div class="openings"><span>Jr. Cook </span><span>Toronto </span></div>
+			 	</div>
+		 		<form id="careersForm">
+		 			<label>Full Name</label>
+		 			<input type="text" id="fname" name="fname" />
 
+		 			<label>Contact #</label>
+		 			<input type="text" id="phone" name="phone" />
+
+		 			<label>Applying For</label>
+		 			<input type="text" id="post" name="post" disabled />
+		 			<input type="text" id="location" name="location"  disabled />
+
+		 			<input type="submit" value="Apply">
+
+		 		</form>
+
+		 		<div class="formOutput">
+		 		
+		 		</div>
+	 		</article>
+		</div>
+
+	</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/careers.js"></script>
 </body>
 </html>
