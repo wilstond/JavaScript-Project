@@ -423,3 +423,7 @@ blockquote:before {
 	margin: 0 auto;
 	padding: 10px;
 }
+
+.quote{
+	display: none;
+}
