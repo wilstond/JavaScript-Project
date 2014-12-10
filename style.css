@@ -45,6 +45,8 @@ nav a
 	font-size: 0.9em;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	vertical-align: middle;
+	display: inline-block;
 }
 
 nav ul
