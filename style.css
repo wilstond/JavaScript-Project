@@ -2,21 +2,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Playball);
 
-.clearfix:after {  
-  content: " ";  /*Old browsers doesn't support empty content*/
-  display: block;  
-  height: 0;  
-  clear: both;  
-  visibility: hidden;
-}
- 
-/*If you do not need(or care about) IE support*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 body
 {
 	font-family: 'Lato', sans-serif;
@@ -46,39 +31,6 @@ header
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 }
-
-
-#main {
-	margin: 100px auto 0;
-	width: 1000px;
-	background-color: #F2F2F2;
-	padding-bottom: 20px;
-}
-
-#main h2 {
-	background: #4d1d03; 
-	color: #fff;
-	padding: 15px;
-	margin: 0; 
-	font-size: 22pt;
-	font-family:'Oswald', sans-serif;
-	letter-spacing: 2px;
-}
-
-#main h3 {
-	font-weight: bold;
-	font-family: 'Oswald', sans-serif;
-	padding: 15px;
-	margin: 0;
-}
-
-#main p {
-	font-family: 'Roboto', sans-serif;
-	margin: 0; 
-	padding: 15px;
-}
-
-
 
 nav a
 {
@@ -261,7 +213,6 @@ nav ul ul li a
 .second_content
 {
 	background: #fff;
-	font-family: 'Oleo Script', cursive;
 	width: 100%;
 	height: 100%;	
 	padding: 20px;
@@ -269,8 +220,26 @@ nav ul ul li a
 	text-align: center;
 }
 
+/*-------------------- menu box CSS -----------------*/
 
+.menu
+{
+	width: 100%;
+	height: 250px;
+	border-bottom: 1px dotted #4d1d03;
+	border-top: 1px dotted #4d1d03;
+}
 
+.menu_box
+{
+	width: 21%;
+	margin: 1%;
+	height: 220px;
+	display: inline-block;
+	position: relative;
+}
+
+<<<<<<< Updated upstream
 /* Gift Card Styles */
 .cardValue{
 	float:left;
@@ -287,26 +256,82 @@ nav ul ul li a
 	text-align: center;
 	margin-top: 15px;
 	cursor: pointer;
-}
-
-
-.cardValue:before{
-	content: "$"
-}
-
-#giftCardForm{
-	float: left;
-	width: 40%;
-	display: block;
-}
-
-
-#giftCardForm div{
-
+=======
+.menu_wrap
+{
+	width: 94%;
 	display: table;
-
+	margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
+.menu_box div
+{
+	width: 100%;
+	background: rgba(77,29,3, 1);
+	padding: 10px 0px 0px 0px;
+	bottom: 0;
+	position: absolute;
+}
+
+.menu_box a
+{
+	width: 100%;
+	text-decoration: none;
+	color: #fff;
+	font-size: 2.3em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	position: relative;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.banner
+{
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	border-left : 7px solid #4d1d03;
+	margin: 20px;
+}
+
+#triangle
+{
+	width: 0;
+	height: 0;
+	border-bottom: 150px solid #4d1d03;
+	border-left: 150px solid transparent;
+	float: right;
+}
+
+.right
+{
+	width: 45%;
+	height: 150px;
+	background: #4d1d03;
+	color: #fff;
+	float: right;
+	text-align: center;
+}
+
+.right p
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 200%;	
+}
+
+.right p:nth-child(3)
+{
+	color: #4d1d03;
+	background: #fff;
+	border-radius: 25px 0px 0px 25px;
+}
+
+<<<<<<< Updated upstream
 #dineCard{
 	position: relative;
 }
@@ -329,14 +354,34 @@ nav ul ul li a
 	font-size: 20px;
 	color: #C50000;
 	text-transform: capitalize;
+=======
+.desc
+{
+	text-align: center;
+	margin: 0 auto;
+	width: 85%;
+	color: #808080;
+	padding:  50px 10px;
+	border-bottom: 1px dotted #4d1d03;
 }
 
-.cardPreview{
-	float: left;
-	width: 40%;
-	margin-left: 40px;
+.desc p
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	line-height: 160%;
+>>>>>>> Stashed changes
 }
 
+blockquote
+{
+	font-family: 'Oleo Script', cursive;
+	font-size: 2em;	
+	margin-top: 20px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+<<<<<<< Updated upstream
 input[type=text]{
 	width: 90%;
 	height: 25px;
@@ -347,24 +392,69 @@ input[type=text]{
 	margin-left: 5px;
 	margin-top: 5px;
 }	
-
-input[type=submit]{
-	width: 80px;
-	height: 30px;
-	text-transform: uppercase;
-	margin:20px auto 0;
-	display: block;
-
+=======
+blockquote:before {
+  color: #808080;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 
+#bottom_content
+{
+	height: 50%;
+}
+
+#foot
+{
+	height: 35%;
+}
+>>>>>>> Stashed changes
+
+.fblocks
+{
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #fff; ;
+}
+
+.fblocks a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+<<<<<<< Updated upstream
 label{
 		display: block;
 		font-size: 14px;
 		color: #333;
 		margin-top: 10px;	
+=======
+.fblocks a:hover
+{
+	border-bottom: 1px solid #fff;
+	color: #fff;
 }
 
+.fblocks ul
+{
+	display: inline-block;
+	margin: 3%;
+>>>>>>> Stashed changes
+}
 
+.fblocks ul li
+{
+	list-style-type: none;
+	font-size: 1em;
+	line-height: 200%;
+	font-family: 'Lato', sans-serif;
+}
+
+<<<<<<< Updated upstream
 
 /*Location Page CSS*/
 
@@ -387,4 +477,11 @@ label{
 
 .info{
 	display: none;
+=======
+.fblocks ul li:first-child
+{
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+>>>>>>> Stashed changes
 }
