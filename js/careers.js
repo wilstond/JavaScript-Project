@@ -16,19 +16,21 @@ $(document).ready(function(){
         	alert("You have successfully applied for " + $('#post').val()  + " at location " + $('#location').val());	
         	$('.formOutput').css("display", "block");
 			$('.formOutput').html("Thank you " + $("#fname").val() + "</br></br> We will contact you soon.");
+			return false;
         }
         else{
-        	alert("Your card cannot be processed right now.");
-        	$('.formOutput').css("display", "none");
+        	alert("Your application cannot be processed right now.");
         	return	false;
+
         }
 	});
 });
 
 
+
 function validateForm(){
 
-	alert("Your card cannot be processed sdsdright now.");
+	var validationSummary = "";
 
 	var name_regex = /[A-Za-z]{3,20}/;
 
@@ -36,6 +38,7 @@ function validateForm(){
 	
 	var name 		= 	$("#fname").val();
 	var phone		=   $('#phone').val();
+
 
 
 	var bool_val = 0;
@@ -58,8 +61,8 @@ function validateForm(){
 
 
 	if(bool_val == 0){
-		//document.getElementById('validationSummary').innerHTML = validationSummary;
-		//validationSummary="";
+		$('.formOutput').html (validationSummary);
+		$('.formOutput').css("display", "block");
 		return  false;
 	}
 	else{
