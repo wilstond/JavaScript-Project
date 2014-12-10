@@ -427,3 +427,7 @@ blockquote:before {
 .quote{
 	display: none;
 }
+
+.quote:first-child{
+	display: block;
+}
