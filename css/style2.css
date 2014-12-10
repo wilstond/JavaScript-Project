@@ -1,4 +1,4 @@
-#dineCard #printValue{
+#dineCard ,#printValue{
 	position: absolute;
 	top:70px;
 	left: 10px;
@@ -30,7 +30,7 @@ input[type=submit]{
 	text-transform: uppercase;
 	margin:20px auto 0;
 	display: block;
-
+}
 
 #bottom_content
 {
