@@ -377,21 +377,23 @@ label{
 #careersForm{
 	width: 60%;
 	display: block;
-	margin-top: 20px;
-	float: left;
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin: 0 auto;
+	padding: 20px 0px;
 }
 
-
-#careersForm input[type=text]
-{
-
-}
 
 
 .formOutput{
-	float: right;
-	width: 30%;
-	margin-right: 10px;
+
+	width: 40%;
+	display: none;
+	background: green;
+	color: #fff;
+	margin: 0 auto;
+	padding: 5px 0px;
 }
 
 
