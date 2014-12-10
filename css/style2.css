@@ -13,59 +13,73 @@
   clear: both;
 }
 
-
-
-.wrapper
+body
 {
-	width: 1024px;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
+
 }
 
-
 #main {
-	margin: 100px auto 0;
-	width: 1000px;
-	background-color: #F2F2F2;
+	margin: 70px auto 0;
+	width: 100%;
+	color: #fff;
+	text-shadow: 2px 2px solid #300c0a;
 	padding-bottom: 20px;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+#main h2,h3
+{
+	line-height: 170%;
 }
 
 #main h2 {
-	background: #4d1d03; 
+	width: 100%;
 	color: #fff;
 	padding: 15px;
-	margin: 0; 
-	font-size: 22pt;
+	font-size: 2em;
+	font-weight: 500;
 	font-family:'Oswald', sans-serif;
 	letter-spacing: 2px;
+	text-shadow: 2px 2px solid #300c0a;	
+	margin-top: 50px;
+	border-bottom: 1px solid #fff;
 }
 
 #main h3 {
-	font-weight: bold;
-	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	line-height: 200%;
+	font-family: 'Lato', sans-serif;
 	padding: 15px;
 	margin: 0;
+	font-weight: 400;
+}
+
+#main h3,p
+{
+	text-shadow: 3px 3px solid #300c0a;
+	font-size: 1.1em;
 }
 
 #main p {
-	font-family: 'Roboto', sans-serif;
-	margin: 0; 
+	line-height: 200%;
+	font-family: 'Lato', sans-serif;	margin: 0; 
 	padding: 15px;
+	font-weight: 400;
+	border-bottom: 1px solid #fff;
 }
 
 
 /* Gift Card Styles */
 .cardValue{
 	float:left;
-	background-color: #fff;
+	background-color: green;
 	border-radius: 5px;
 	width: 70px;
-	height: 50px;
+	padding: 10px 5px;
 	margin-left: 15px;
-	border:1px solid #aaa;
 	font-size:15px;
-	color: #333;
-	line-height: 45px;
+	color: #fff;
 	vertical-align: middle;
 	text-align: center;
 	margin-top: 15px;
@@ -77,12 +91,20 @@
 	content: "$"
 }
 
+.gift_wrap
+{
+	width: 85%;
+	margin: 0 auto;
+}
+
 #giftCardForm{
 	float: left;
 	width: 40%;
 	display: block;
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 30px;
 }
-
 
 #giftCardForm div{
 
@@ -91,7 +113,10 @@
 }
 
 #dineCard{
+	margin-top: 20px;
 	position: relative;
+	font-family: 'Oleo Script', cursive;
+	font-size: 1.5em;	
 }
 
 
@@ -99,8 +124,10 @@
 	position: absolute;
 	top:20px;
 	left: 10px;
-	font-size: 26px;
-	font-family: 'Playball';
+	font-family: 'Oleo Script', cursive;
+	font-size: 1.5em;
+	color: #300c0a;
+
 	text-transform: capitalize;
 }
 
@@ -123,9 +150,9 @@
 input[type=text]{
 	width: 90%;
 	height: 25px;
-	padding:5px;
+	padding:15px;
 	background-color: #fff;
-	border-radius: 2px;
+	border-radius: 5px;
 	border:1px solid #efefef;
 	margin-left: 5px;
 	margin-top: 5px;
@@ -133,9 +160,14 @@ input[type=text]{
 
 input[type=submit]{
 	width: 80px;
-	height: 30px;
+	background: #3498DB;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
 	text-transform: uppercase;
-	margin:20px auto 0;
+	margin:20px auto ;
 	display: block;
 
 }
@@ -153,18 +185,49 @@ label{
 
 #map-canvas{
 	 width: 500px;
-     height: 400px;
-
+     height: 410px;
+     margin: 50px 10px 50px 50px;
+     margin-left: 50px;
+     padding: 10px;
+     border: 1px solid #fff;
 }
 
+#locations
+{
+	background: rgba(0,0,0, 0.4);
+	font-family: 'Oleo Script', cursive;
+	width: 100%;
+	display: table;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.find
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.location_box
+{
+
+}
 
 .locationSelect{
 	float: left;
 	width: 30%;
+	
+}
+
+.locationSelect a
+{
+	text-decoration: none;
+	color: #fff;
 }
 
 .locationPreview{
-	float: left;
+    float: right;
 	width: 60%
 }
 
@@ -184,25 +247,6 @@ label{
 	float: left;
 	width: 40%;
 	margin-left: 40px;
-}
-
-input[type=text]{
-	width: 90%;
-	height: 30px;
-	padding:5px;
-	background-color: #fff;
-	border-radius: 2px;
-	border:1px solid #efefef;
-	margin-left: 5px;
-	margin-top: 5px;
-}	
-
-input[type=submit]{
-	width: 80px;
-	height: 30px;
-	text-transform: uppercase;
-	margin:20px auto 0;
-	display: block;
 }
 
 #bottom_content

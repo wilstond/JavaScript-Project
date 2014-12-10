@@ -8,6 +8,7 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300italic,400italic' rel='stylesheet' type='text/css'>	
 </head>
 
 <body>
@@ -34,45 +35,91 @@
 				</nav>
 			</div>			
 		</header>
+		<div class="head_content">
 		<div id="main" class="clearfix">
-	 		<h2>Gift your loved one's </h2>
+		<div class="wrapper">
+	 		<h2>GIFT YOUR LOVED ONE'S </h2>
 	 		<article id="feedback">
 	 		<h3>AS MENU OFFERINGS VARY BY LOCATION AND CAN CHANGE DAILY, PLEASE CONTACT YOUR LOCAL FIRST ROW LOCATION FOR THEIR CURRENT SELECTIONS AS WELL AS ALL OTHER ITEMS AVAILABLE.</h3>
 
 			
 			<p class="content">We'd love to have your feedback. Tell us about your latest visit to your neighborhood First Row. Or maybe you have a question for us. Whatever the reason, use this form to let us know what's on your mind and help us direct your comments or questions to the right person.</p>
+			<div class="gift_wrap">
+				<form id="giftCardForm">
+					
+					<label for="cardName">Name on Card:</label>	
+					<input type="text" name="cardName" id="cardName">
 
-			<form id="giftCardForm">
-				
-				<label for="cardName">Name on Card:</label>	
-				<input type="text" name="cardName" id="cardName">
+					<label for="cardadd">Address to mail</label>	
+					<input type="text" name="cardadd" id="cardadd">
 
-				<label for="cardadd">Address to mail</label>	
-				<input type="text" name="cardadd" id="cardadd">
+					<label for="">Card value:</label>
 
-				<label for="">Card value:</label>
+					<div>
+						<span class="cardValue" id="v10">50</span>
+						<span class="cardValue" id="v20">100</span>
+						<span class="cardValue" id="v50">200</span>
+						<span class="cardValue" id="v100">500</span>
+					</div>
 
-				<div>
-					<span class="cardValue" id="v10">50</span>
-					<span class="cardValue" id="v20">100</span>
-					<span class="cardValue" id="v50">200</span>
-					<span class="cardValue" id="v100">500</span>
-				</div>
+					<input type="submit" value="Pay Now" id="submit" />
+					
+				</form>
 
-				<input type="submit" value="Pay Now" id="submit" />
-				
-			</form>
-
-			<div class="cardPreview">
-				<div id="dineCard">
-					<img src="img/dineCard.png" alt="Dine Card" />
-					<p id="printName"></p>
-					<p id="printValue"></p>
+				<div class="cardPreview">
+					<div id="dineCard">
+						<img src="img/dineCard.png" alt="Dine Card" />
+						<p id="printName"></p>
+						<p id="printValue"></p>
+					</div>
 				</div>
 			</div>
 	 		</article>
 		</div>
+		</div>
+		</div>
 	</div>
+	<footer>
+		<div id="foot" class="head_content">
+			<div class="wrapper">
+				<div class="foot_content">
+
+					<div class="fblocks">
+						<ul>
+							<li><a href="#">MENU</a></li>
+							<li><a href="#">Daily</a></li>	
+							<li><a href="#">Weekly</a></li>	
+							<li><a href="#">Monthly</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">FIRST ROW</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Gift Card</a></li>
+							<li><a href="#">Events</a></li>
+
+						</ul>
+						<ul>
+							<li><a href="#">CONTACT</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Site Map</a></li>
+
+						</ul>
+						<div class="social">
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-instagram"></i>
+							<i class="fa fa-github"></i>
+
+						</div>
+						<div class="copyright"> &copy; 2014 | All rights reserved. </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/gifts.js"></script>
 </body>
