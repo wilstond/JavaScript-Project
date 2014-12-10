@@ -1,6 +1,5 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato);
-@import url(http://fonts.googleapis.com/css?family=Playball);
 
 body
 {
@@ -239,30 +238,11 @@ nav ul ul li a
 	position: relative;
 }
 
-<<<<<<< Updated upstream
-/* Gift Card Styles */
-.cardValue{
-	float:left;
-	background-color: #fff;
-	border-radius: 5px;
-	width: 70px;
-	height: 50px;
-	margin-left: 15px;
-	border:1px solid #aaa;
-	font-size:15px;
-	color: #333;
-	line-height: 45px;
-	vertical-align: middle;
-	text-align: center;
-	margin-top: 15px;
-	cursor: pointer;
-=======
 .menu_wrap
 {
 	width: 94%;
 	display: table;
 	margin: 0 auto;
->>>>>>> Stashed changes
 }
 
 .menu_box div
@@ -331,30 +311,6 @@ nav ul ul li a
 	border-radius: 25px 0px 0px 25px;
 }
 
-<<<<<<< Updated upstream
-#dineCard{
-	position: relative;
-}
-
-
-#dineCard #printName{
-	position: absolute;
-	top:20px;
-	left: 10px;
-	font-size: 26px;
-	font-family: 'Playball';
-	text-transform: capitalize;
-}
-
-
-#dineCard #printValue{
-	position: absolute;
-	top:70px;
-	left: 10px;
-	font-size: 20px;
-	color: #C50000;
-	text-transform: capitalize;
-=======
 .desc
 {
 	text-align: center;
@@ -370,7 +326,6 @@ nav ul ul li a
 	font-family: 'Lato', sans-serif;
 	font-size: 1.1em;
 	line-height: 160%;
->>>>>>> Stashed changes
 }
 
 blockquote
@@ -381,18 +336,6 @@ blockquote
 	quotes: "\201C""\201D""\2018""\2019";
 }
 
-<<<<<<< Updated upstream
-input[type=text]{
-	width: 90%;
-	height: 25px;
-	padding:5px;
-	background-color: #fff;
-	border-radius: 2px;
-	border:1px solid #efefef;
-	margin-left: 5px;
-	margin-top: 5px;
-}	
-=======
 blockquote:before {
   color: #808080;
   content: open-quote;
@@ -411,7 +354,6 @@ blockquote:before {
 {
 	height: 35%;
 }
->>>>>>> Stashed changes
 
 .fblocks
 {
@@ -426,13 +368,6 @@ blockquote:before {
 	color: #fff;
 }
 
-<<<<<<< Updated upstream
-label{
-		display: block;
-		font-size: 14px;
-		color: #333;
-		margin-top: 10px;	
-=======
 .fblocks a:hover
 {
 	border-bottom: 1px solid #fff;
@@ -443,7 +378,6 @@ label{
 {
 	display: inline-block;
 	margin: 3%;
->>>>>>> Stashed changes
 }
 
 .fblocks ul li
@@ -454,34 +388,9 @@ label{
 	font-family: 'Lato', sans-serif;
 }
 
-<<<<<<< Updated upstream
-
-/*Location Page CSS*/
-
-#map-canvas{
-	 width: 500px;
-     height: 400px;
-
-}
-
-
-.locationSelect{
-	float: left;
-	width: 30%;
-}
-
-.locationPreview{
-	float: left;
-	width: 60%
-}
-
-.info{
-	display: none;
-=======
 .fblocks ul li:first-child
 {
 	font-size: 1.2em;
 	font-weight: 700;
 	font-family: 'Oswald', sans-serif;
->>>>>>> Stashed changes
 }
