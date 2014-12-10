@@ -5,33 +5,38 @@ $(document).ready(function(){
 	});
 
 	$('#careersForm').submit(function(){
-		alert("You have successfully applied for " + $('#post').val()  + " at location " + $('#location').val());	
-		$('.formOutput').html("Thank you " + $("#fname").val() + "</br></br> We will contact you soon.");
+		
 		return false;
 	});
 
 
 	$("form").submit(function(){	
-        // if(validateForm()){
-        // 	alert("Payment Received. Dine Card will be mailed to -  " + $('#cardadd').val());
-        // }
-        // else{
-        // 	alert("Your card cannot be processed right now.");
-        // 	return	false;
-        // }
+		
+        if(validateForm()){
+        	alert("You have successfully applied for " + $('#post').val()  + " at location " + $('#location').val());	
+        	$('.formOutput').css("display", "block");
+			$('.formOutput').html("Thank you " + $("#fname").val() + "</br></br> We will contact you soon.");
+        }
+        else{
+        	alert("Your card cannot be processed right now.");
+        	$('.formOutput').css("display", "none");
+        	return	false;
+        }
 	});
 });
 
 
 function validateForm(){
 
+	alert("Your card cannot be processed sdsdright now.");
+
 	var name_regex = /[A-Za-z]{3,20}/;
 
-	var postal_regex = /[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d/;
+	var phone_regex = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
 	
-	var name 		= 	$("#cardName").val();
-	var address		=   $('#cardadd').val();
-	var postal 		= 	$('#postal').val();
+	var name 		= 	$("#fname").val();
+	var phone		=   $('#phone').val();
+
 
 	var bool_val = 0;
 	var validationSummary = "";
@@ -40,29 +45,21 @@ function validateForm(){
 		bool_val = 1;
 	}
 	else{
-		validationSummary += "Please enter name in correct format. </br>";	
+		validationSummary += "Please enter Name in correct format. </br>";	
 		bool_val = 0;
 	}
 
-	if( (address != '')  && (address !=null) ){
+	if( (phone != '')  && (phone !=null) && (phone_regex.test(phone))){
 		bool_val = 1;
 	}else{
-		validationSummary += "Please enter full address in correct format.</br>";
-		bool_val = 0;
-		
-	}
-
-	if( (postal != '')  && (postal !=null) && (postal_regex.test(postal))){
-		bool_val = 1;
-	}else{
-		validationSummary +="Please enter postal code in correct format.</br>";
+		validationSummary +="Please enter  Phone in correct format.</br>";
 		bool_val = 0;
 	}
 
 
 	if(bool_val == 0){
-		document.getElementById('validationSummary').innerHTML = validationSummary;
-		validationSummary="";
+		//document.getElementById('validationSummary').innerHTML = validationSummary;
+		//validationSummary="";
 		return  false;
 	}
 	else{
