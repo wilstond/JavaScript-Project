@@ -354,25 +354,32 @@ label{
 /*Careers Page*/
 .openingsWrapper{
 	display: block;
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .openings {
+	width: 30%;
 	display: block;
-	background-color: #fff;
-	border:1px solid #ccc;
+	background: #300c0a;
+	border: 2px solid #fff;
 	float: left;
 	height: 40px;
 	line-height: 35px;
 	font-size: 15px;
-	color: #333;
+	color: #fff;
 	padding: 0 8px;
 	text-align: center;
 	margin: 15px;
 	cursor: pointer;
 }
 
-
-
+.openings:hover
+{
+	background: #fff;
+	color: #300c0a;
+}
 
 #careersForm{
 	width: 60%;
