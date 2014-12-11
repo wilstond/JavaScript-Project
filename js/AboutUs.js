@@ -1,11 +1,15 @@
-jQuery(document).ready(function(){
-//hides all paragraphs
-$(".content").hide(); 
+$(document).ready(function(){
+	 setInterval(changeQuote, 5000);
+	 var i=0;
+	
 
-//when a h2 is clicked
-$('#OU').click(function(){
-		$('.content').toggle(3000);
+	 function changeQuote(){
+		if(i>3)
+			i=0;
 		
-	});
+		$('#sliderpart').children().eq(i).fadeOut(300).next().delay(300);
+		$('#sliderpart').children().eq(i+1).fadeIn(300);
+		i++;
+	 }
 
-}); 
+});

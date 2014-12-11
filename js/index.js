@@ -4,9 +4,6 @@ $(document).ready(function(){
 	
 
 	 function changeQuote(){
-	 	// $('#sliderQuotes').children('blockquote').each(function () {
-	 	    
-	 	// });
 		if(i>3)
 			i=0;
 		

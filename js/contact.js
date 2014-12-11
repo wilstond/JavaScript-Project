@@ -17,9 +17,8 @@ function validateForm(){
 	
 	var name 		= 		$("#name").val();
 	var email		=   	$("#email").val();
-	var feedbacka		= 	$("#feedbacka").html();
+	var feedbacka		= 	$("#feedbacka").val();
 
-	var bool_val = 0;
 	var validationSummary = "";
 
 	if( (name != '')  && (name !=null)  && (name_regex.test(name))){
@@ -45,11 +44,15 @@ function validateForm(){
 		bool_val = 0;
 	}
 
-	alert(bool_val);
+
 
 	if(bool_val == 0){
-		$(".formOutput").html(validationSummary);
+		$("#formOutput").html(validationSummary);
 		validationSummary="";
+		$('.formOutput').css({
+  							 'display' : 'block',
+  							  'background-color' : '#D30E12',
+							});
 		return  false;
 	}
 	else{

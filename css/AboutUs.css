@@ -33,3 +33,31 @@ body {
 	margin: 0; 
 	padding: 15px;
 }
+
+
+#bottom_content{
+	height: auto;
+}
+
+.part{
+	padding: 50px 0;
+	display: none;
+}
+
+.part:first-child{
+	display: block;
+}
+
+.dp{
+	border-radius: 50%;
+	border:3px solid #fff;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.part p {
+	font-size: 16px;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
