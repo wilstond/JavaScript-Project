@@ -434,7 +434,9 @@ blockquote:before {
 }
 
 
-.validationSummary{
-	font-style: 10px;
+#validationSummary{
+	font-size: 13px;
 	color: #333;
+	line-height: 15px;
+
 }
