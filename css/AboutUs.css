@@ -55,6 +55,11 @@ body {
 	margin: 0 auto;
 }
 
+.part h3{
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
 .part p {
 	font-size: 16px;
 	padding: 10px;
