@@ -95,6 +95,18 @@ body
 	margin: 50px auto 0;
 }
 
+
+.gift_wrap textarea{
+	border: 1px solid #efefef;
+    border-radius: 5px;
+    color: #000;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 90%;
+}
+
 #giftCardForm{
 	float: left;
 	width: 40%;
