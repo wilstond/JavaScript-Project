@@ -1,0 +1,73 @@
+#game-container {
+    position: relative;
+    width: 90%;
+    height: 85%;
+    /*background: rgba(255,255,255,0.5);*/
+    background-image: url("../img/game-bg.jpg");
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 10px solid white;
+}
+
+
+#sock-wrapper {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 10px 0 0 10px;
+}
+
+
+#sock-wrapper img {
+    width: 130px;
+    height: 130px;
+}
+
+#timer-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #4d1d03;
+    width: 15%;
+    height: 25%;
+    background: rgba(77,29,3,0.8);
+}
+
+#lbl-timer {
+    /*position: inherit;*/
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    /*margin-top: 10px;*/
+}
+
+#play-btn {
+    margin: 5px 15px 0 0;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+#restart-btn {
+    font-size: 45px;
+    cursor: pointer;
+}
+
+#game-message {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    border: 1px solid black;
+    width: 45%;
+    height: 60%;
+    background: rgba(77,29,3,0.8);
+}
+
+#game-message h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#game-message p {
+    font-size: 24px;
+}
