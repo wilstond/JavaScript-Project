@@ -5,7 +5,6 @@
     background: rgba(0,0,0, 0.4);
 	font-family: 'Lato', sans-serif;
 	width: 100%;
-    height: 100%;
 	padding-top: 120px;
     padding-bottom: 50px;
 	color: #fff;
@@ -19,7 +18,6 @@
 
 #brunch-header, #lunch-header, #dinner-header, #buffet-header, #drinks-header {
     padding: 20px 0;
-    background: #4d1d03;
     font-size: 30px;
     margin: 0 auto;
     /*margin-bottom: 20px;*/
@@ -27,13 +25,37 @@
     width: 50%;
     /*border: 2px solid #300c0a;*/   
     /*border-radius: 10px;*/
+    cursor: pointer;
 }
+
+
+#menu-content > h2:after{ 
+    content: "^";
+    display: inline-block;
+    margin-left: 20px;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+
+
+.changedContent:after{
+    
+     -ms-transform: rotate(0deg) !important; /* IE 9 */
+    -webkit-transform: rotate(0deg)!important; /* Chrome, Safari, Opera */
+    transform: rotate(0deg)!important;
+    transition: all 0.5s ease;
+
+
+}
+
 
 #brunch-content, #lunch-content, #dinner-content, #buffet-content, #drinks-content {
     padding-top: 20px;
     width: 50%;
     margin: 0 auto;
-    background: rgba(255,255,255,0.7);
+    
 }
 
 #brunch-content, #lunch-content, #dinner-content, #buffet-content, #drinks-content ul li {
@@ -44,6 +66,21 @@
     /*border: 1px solid #300c0a;*/
     padding: 10px 5px;
     /*background: rgba(0,0,0,0.7);*/
+}
+
+#lunch-content div,#lunch-content .desc, .price{
+     color: yellow;
+    font-weight: bold;
+}
+
+#lunch-content div h2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.desc{
+    color: yellow;
+    font-weight: bold;
 }
 
 
