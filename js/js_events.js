@@ -1,12 +1,6 @@
-//alert("linked");
-
-
-// Code by Alagappan Palaniappan
-
-
 var name_regex = /[A-Za-z]{3,20}/;
-var pass_regex = /\w{3,10}/;
 var email_regex= /^[0-9a-zA-Z]+([0-9a-zA-Z]*[-._+])*[0-9a-zA-Z]+@[0-9a-zA-Z]+([-.][0-9a-zA-Z]+)*([0-9a-zA-Z]*[.])[a-zA-Z]{2,6}$/;
+var number_regex= /^[2-9]{2}[0-9]{8}$/;
 
 // regular expression from regexlib.com
 
@@ -14,34 +8,14 @@ var email_regex= /^[0-9a-zA-Z]+([0-9a-zA-Z]*[-._+])*[0-9a-zA-Z]+@[0-9a-zA-Z]+([-
 $(function()
 {
 
-//alert("linked");
-
-$("#wrapper_hidden").hide();
-
-$("#reg").hover(function(){ $("#content_para").hide(); $("#form").show();},
-				function(){});
-
-
-$("#e1").hover(function(){$("#form").hide();$("#content_para").html($("#e1_para").html());$("#content_para").show();},
-				function(){});
-
-$("#e2").hover(function(){$("#form").hide();$("#content_para").html($("#e2_para").html());$("#content_para").show();},
-				function(){});
-
-$("#e3").hover(function(){$("#form").hide();$("#content_para").html($("#e3_para").html());$("#content_para").show();},
-				function(){});
-
-
-
-
 $("#submit").click(function(){ 
-		if(validation()==0){ event.preventDefault();} else {alert("Registration is sucessful");}
+		if(validation()==0){ event.preventDefault();} else {alert("Thank you for booking, you will be contacted soon!!!");}
 	
 
 	});
 
 $("#clear").click(function(){ 
-		$('#form').trigger("reset");
+		$('#booking-form').trigger("reset");
 	});
 
 	
@@ -49,12 +23,10 @@ $("#clear").click(function(){
 
 	function validation()
 	{
-		alert("called");
-
 		
 		if($("#fname").val()=="" || $("#lname").val()=="" || $("#mail").val()=="")
 			{
-			alert("please fill all the values in the form");
+			alert("Please fill all the values in the form");
 			$("#fname").focus();	
 			}
 
@@ -68,19 +40,13 @@ $("#clear").click(function(){
 			if(!email_regex.test($("#mail").val()))
 				{ alert("Invalid email address"); $("#mail").focus(); }
 			
-		else
-			if(!pass_regex.test($("#pass").val()))
-				{ alert("Password should be Minimum 3 to Max 10 Characters"); $("#pass").focus();}
+		else  
+            if(!number_regex.test($("#phone").val()))
+				{ alert("Invalid phone number"); $("#phone").focus(); }
 
-		else 
-			if($("#pass").val() === $("#cpass").val())
-			{
-	
-			return 1;
-			}
 
 		else
-		{ alert("password mismtach, please try again !");}
+		{ return 1;}
 	
 
 		return 0;

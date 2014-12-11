@@ -1,7 +1,11 @@
 .sitemap{
-	margin-top: 250px;
-}
+	margin-top: 200px;
+	background: rgba(0,0,0,0.7);
+	display: block;
+	height: 225px;
+	padding-top: 50px;
 
+}
 
 .sitemap > li {
 	float: left;
