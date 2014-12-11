@@ -2,6 +2,7 @@ $(document).ready(function() {
     
     
     $('#sock-wrapper img').hide();
+    $('#restart-btn').hide();
     
     reloadMessage();
     $('#game-message').show();
@@ -41,6 +42,7 @@ $(document).ready(function() {
             clearInterval(timerFunction);
             gameOverMessage();
             $('#game-message').show();
+            $('#restart-btn').hide();
         }
     }
     
@@ -49,11 +51,13 @@ $(document).ready(function() {
     $('#play-btn').click(function() {
         $('#game-message').hide();
         $('#sock-wrapper img').show();
+        $('#restart-btn').show();
         clearInterval(timerFunction);
         timerFunction = setInterval(updateTime, 1000);
     });
     
     $('#restart-btn').click(function() {
+        $('#lbl-timer').css('color','white');
         clearInterval(timerFunction);
         timeLeft = 30;
         timerFunction = setInterval(updateTime, 1000);
@@ -61,7 +65,7 @@ $(document).ready(function() {
     
     function reloadMessage() {
         $('#game-message h1').text("Spot the stocking");
-        $('#game-message p').html("Click on the stacking to win attractive prizes.<br/><br/>Click play to start. ");
+        $('#game-message p').html("Click on the stacking to win attractive prizes.<br/><br/>Click &nbsp;<i class=\"fa fa-play\">&nbsp; to start. ");
     }
     
     function gameOverMessage() {
