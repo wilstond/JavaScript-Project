@@ -30,21 +30,18 @@
 
 
 #menu-content > h2:after{ 
-    content: "^";
+    content: "+";
     display: inline-block;
     margin-left: 20px;
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-    transition: all 0.5s ease;
+  
 }
 
 
 .changedContent:after{
-    
-     -ms-transform: rotate(0deg) !important; /* IE 9 */
-    -webkit-transform: rotate(0deg)!important; /* Chrome, Safari, Opera */
-    transform: rotate(0deg)!important;
+   
+     -ms-transform: rotate(45deg) !important; /* IE 9 */
+    -webkit-transform: rotate(45deg)!important; /* Chrome, Safari, Opera */
+    transform: rotate(45deg)!important;
     transition: all 0.5s ease;
 
 
@@ -68,19 +65,62 @@
     /*background: rgba(0,0,0,0.7);*/
 }
 
-#lunch-content div,#lunch-content .desc, .price{
-     color: yellow;
-    font-weight: bold;
+#menu-container >  div > div{
+    background-color:rgba(0,0,0,0.5);
 }
 
-#lunch-content div h2 {
+#menu-container >  div > div > h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#menu-container div,#menu-container .desc{
+     color: orange;
+    font-weight: bold;
+
+}
+
+#menu-container div h2 {
     color: #fff;
     font-weight: 400;
 }
 
-.desc{
-    color: yellow;
+#menu-container div .price{
+    padding-top:15px;
+    color: #fff;
+}
+
+#menu-container div .desc{
+    color: orange;
     font-weight: bold;
+    padding:15px 10px 40px;
+    font-size: 14px;
+}
+
+#buffet-content  h3{
+    font-size: 20px;
+}
+
+#buffet-content ul > li {
+
+}
+
+#buffet-content  > ul > li > ul{
+    margin-top: -25px;
+    margin-bottom: 60px;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 30px;
+}
+
+#buffet-content .desc{
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
+    border:none;
+}
+
+
+#buffet-content ul li{
+    margin-top: 40px;
 }
 
 
